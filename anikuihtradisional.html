@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ani Kuih Tradisional - Nasi lemak dan kuih tradisional untuk sarapan pagi.">
+  <title>Ani Kuih Tradisional</title>
+  <style>
+    :root {
+      --brown: #6b3e26;
+      --cream: #fff8e8;
+      --gold: #e6a52f;
+      --green: #4d7c4a;
+      --dark: #2d241f;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--brown);
+      color: var(--white);
+      text-align: center;
+      padding: 55px 20px 45px;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 7vw, 3.5rem);
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: var(--brown);
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 1.05rem;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 30px;
+      font-weight: 700;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .menu {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px 20px 45px;
+    }
+
+    .menu h2 {
+      text-align: center;
+      color: var(--brown);
+      margin-bottom: 22px;
+      font-size: 1.9rem;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .item {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    }
+
+    .item .emoji {
+      font-size: 3rem;
+      margin-bottom: 8px;
+    }
+
+    .item h3 {
+      color: var(--brown);
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: var(--green);
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+
+    .info {
+      background: #f2e5c7;
+      padding: 40px 20px;
+    }
+
+    .info-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .info h2 {
+      color: var(--brown);
+      margin-bottom: 18px;
+    }
+
+    .info p {
+      margin: 8px 0;
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 40px 16px;
+      }
+
+      .hero {
+        padding: 35px 16px;
+      }
+
+      .menu {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍚 Ani Kuih Tradisional</h1>
+    <p>Nasi Lemak & Kuih Tradisional Sedap Macam Buatan Rumah</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Selamat Datang!</h2>
+      <p>
+        Singgah sarapan dengan nasi lemak dan kuih-muih tradisional
+        yang dibuat segar setiap pagi.
+      </p>
+      <a class="button" href="https://wa.me/?text=Assalamualaikum%20Makcik%20Ani%2C%20saya%20nak%20buat%20tempahan." target="_blank">
+        WhatsApp untuk Tempahan
+      </a>
+    </section>
+
+    <section class="menu">
+      <h2>Menu Hari Ini</h2>
+
+      <div class="items">
+        <article class="item">
+          <div class="emoji">🍚</div>
+          <h3>Nasi Lemak</h3>
+          <p>Nasi lemak dengan sambal dan lauk pilihan.</p>
+          <div class="price">RM3.00</div>
+        </article>
+
+        <article class="item">
+          <div class="emoji">🥟</div>
+          <h3>Karipap</h3>
+          <p>Karipap rangup dengan inti kentang.</p>
+          <div class="price">RM1.00</div>
+        </article>
+
+        <article class="item">
+          <div class="emoji">🍰</div>
+          <h3>Seri Muka</h3>
+          <p>Kuih seri muka lembut dengan rasa pandan.</p>
+          <div class="price">RM1.50</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info-inner">
+        <h2>📍 Datang Berkunjung</h2>
+        <p><strong>Waktu Operasi:</strong> Isnin – Sabtu, 7:00 pagi – 12:00 tengah hari</p>
+        <p><strong>Lokasi:</strong> Gerai Ani Kuih Tradisional</p>
+        <p>Untuk lokasi tepat, sila hubungi kami melalui WhatsApp.</p>
+        <br>
+        <a class="button" href="https://www.google.com/maps/search/?api=1&query=Ani%20Kuih%20Tradisional" target="_blank">
+          Buka Google Maps
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Ani Kuih Tradisional · Dibuat dengan ❤️
+  </footer>
+
+</body>
+</html>
